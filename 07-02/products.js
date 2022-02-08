@@ -3,4 +3,4 @@ class Products {
         alert("Produto excluído com sucesso!")
     }
 }
-let products = new Products ().
+let products = new Products ()
