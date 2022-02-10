@@ -44,5 +44,5 @@ class Cars {
    car.color = "azul"
    
    
-   car.accelerate()
+   car.accelerate();
    car.status()
