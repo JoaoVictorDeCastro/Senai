@@ -41,7 +41,7 @@ class Cars {
    car.engineStart();
    
    car.year = 2022;
-   car.color = "azul"
+   car.color = "azul";
    
    
    car.accelerate();
