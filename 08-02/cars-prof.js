@@ -18,12 +18,12 @@ class Cars {
    
     engineStart() {
       this.turnOn = true;
-      console.log("Carro ligado")
+      console.log("Carro ligado");
     }
    
     engineStop() {
       this.turnOn = false;
-      console.log("Carro desligado")
+      console.log("Carro desligado");
     }
    
     accelerate() {
