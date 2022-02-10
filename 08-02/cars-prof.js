@@ -45,4 +45,4 @@ class Cars {
    
    
    car.accelerate()
-   car.status
+   car.status()
