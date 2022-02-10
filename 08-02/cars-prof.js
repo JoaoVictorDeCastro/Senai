@@ -30,7 +30,7 @@ class Cars {
       if (this.turnOn === true) {
        this.velocity += 20;
       } else {
-        console.log("ERRO! O carro está desligado!")
+        console.log("ERRO! O carro está desligado!");
       }
     }
    }
