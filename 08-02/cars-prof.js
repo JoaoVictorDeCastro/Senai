@@ -13,7 +13,7 @@ class Cars {
    
      status() {
        console.log(`Este carro tem a cor ${this.color} e é do ano de ${this.year}.
-       Ele está a uma velocidade de ${this.velocity}km/h`)
+       Ele está a uma velocidade de ${this.velocity}km/h`);
      }
    
     engineStart() {
