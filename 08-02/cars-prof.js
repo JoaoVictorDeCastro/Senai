@@ -36,7 +36,7 @@ class Cars {
    }
    
    var car = new Cars();
-   var car2 = new Cars();
+   var car2 = new Cars()
    
    car.engineStart()
    
