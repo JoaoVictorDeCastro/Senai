@@ -38,7 +38,7 @@ class Cars {
    var car = new Cars();
    var car2 = new Cars();
    
-   car.engineStart()
+   car.engineStart();
    
    car.year = 2022
    car.color = "azul"
