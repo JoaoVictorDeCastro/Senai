@@ -40,7 +40,7 @@ class Cars {
    
    car.engineStart();
    
-   car.year = 2022
+   car.year = 2022;
    car.color = "azul"
    
    
