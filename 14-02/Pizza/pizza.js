@@ -8,13 +8,13 @@ class Pizzas {
         this.sabor = "Calabresa";
         this.preço = 39.90;
     }
-    Preparar () {
+    Preparar() {
         console.log("A pizza está pronta!");
     }
-    ColocarNoForno () {
+    ColocarNoForno() {
         console.log("A pizza está no forno!");
     }
-    PegarPedaço () {
+    PegarPedaço() {
         console.log("Você pegou um pedaço!");
     }
 }
