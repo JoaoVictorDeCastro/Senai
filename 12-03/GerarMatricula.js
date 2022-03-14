@@ -19,7 +19,7 @@ class Aluno {
   }
   
   matricular(matricula) {
-    this.matricula = matricula
+    this.matricula = matricula;
     this.matriculado = true;
     console.log(`O aluno está matriculado e o número de sua matrícula é${this.matricula}`)
   }
