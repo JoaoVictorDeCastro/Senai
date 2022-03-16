@@ -1,31 +1,32 @@
 * {
     margin: 0;
-    font-family: Arial;
+    font-family: Exo;
   }
   
   body {
-    background: #E7E8E9;
+    background: black;
   }
   
   header {
-    background-color: black;
-    color: white;
-    font-family: 'Arial', sans-serif;
+    background-color: #fcb823;
+    color: black;
+    font-family: 'Exo';
     text-align: center;
     padding: 16px;
   }
   
   header span {
-    color: yellow;
+    color: white;
   }
   
   .container {
     margin: 32px auto;
     padding: 32px;
-    background-color: white;
+    background-color: #fcb823;
     max-width: 50%;
     color: #3A404A;
     border-radius: 4px;
+    backdrop-filter: blur(12px);
   }
   
   .container h2 {
@@ -46,10 +47,11 @@
   
   .form button {
     margin-top: 16px;
-    background-color: #E0D001;;
+    background-color: black;
     border: none;
     color: white;
     font-weight: 500;
     padding: 8px;
     border-radius: 4px;
+
   }
