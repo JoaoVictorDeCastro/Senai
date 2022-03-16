@@ -25,4 +25,4 @@ class AlunoAcademia {
     }
   }
   
-  var aluno = new AlunoAcademia(
+  var aluno = new AlunoAcademia()
