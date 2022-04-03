@@ -1,85 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="icon" href="images/favicon.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho/Andrick</title>
-    <!-- CSS externo -->
-    <link rel="stylesheet" href="css/aula18.css" />
+    <title>Conversor de Moedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
 </head>
 <body>
-<main id='tela-principal'>
-    <h1>Conversor de Moedas</h1>
-    <section class='conteudos'>
-        <div class='form-group'>
-            <label for="valorEmReal">R$</label>
-            <input
-                type="number"
-                name="valorEmReal"
-                id="valorEmReal"
-                class='input'
-                step='0.01'
-                min='0.00'
-                max='9999999999.99'
-                value=''
-                tabindex="1"
-                onClick='ativarBotao()'
-                onChange='ativarBotao()'
-                autofocus
-                required
-            />
-       </div>
 
-       <div class="form-group">             
-            <input
-                type="radio"
-                id='dolar'
-                name="moedaEstrangeira"
-                class="input radio"
-                value='Dólar'
-                tabindex="2"
-            /> <label for="dolar">Dólar</label>
+    <header class="header">
+        <img src="assets/logoWhite.png" alt="" srcset="">
+    </header>
 
-            <input
-                type="radio"
-                id='euro'
-                name="moedaEstrangeira"
-                class="input radio"
-                value='Euro'
-                tabindex="3"
-            /> <label for="euro">Euro</label>
+    <main class="container">
+        <article class="card">
+            <header class="card__header">
+                <p>Real para Dólar</p>
+                <img src="assets/dolar.svg" alt="">
+            </header>
+            <form class="card__form">
+                <input type="text" id="real1" placeholder="Informe o valor em Real">
+                <button type="button" onclick="moeda.converterRealDollar()">Converter</button>
+            </form>
 
-            <input
-                type="radio"
-                id='libra'
-                name="moedaEstrangeira"
-                class="input radio"
-                value='Libra'
-                tabindex="4"
-            /> <label for="libra">Libra</label>
+            <section class="content" id="resultadoDaConversaoRealDollar"></section>
+        </article>
 
-       </div>
-       <div class="form-group">
-           <button class='desativado botao' id='btnConverter'
-           onClick='ativarBotao(); bloquearBotao()' disabled>Converter</button>
-           <button type="reset" class='botao' id='btnLimpar' tabindex="7">Limpar</button>
-       </div>
-    </section>
-    <div class="instrucoes">
-        <p class='centro' id='aviso'>Digite o valor, escolha a moeda e converter</p>
-    </div>
-    <br>
-    <div class="instrucoes" style='background:#222; border:0'>
-        <figure id='imgMoedas' class='centro'>
-            <img class='animar' src="images/moedas/real.png" alt="Real" width='100px'/>
-            <img class='animar' src="images/moedas/dolar.png" alt="Moeda Estrangeira" width='100px'/>
-        </figure>
-    </div>
+        <article class="card">
+            <header class="card__header">
+                <p>Real para Euro</p>
+                <img src="assets/euro.svg" alt="">
+            </header>
+            <form class="card__form">
+                <input type="text" id="real2" placeholder="Informe o valor em Real">
+                <button type="button" onclick="moeda.converterRealEuro()">Converter</button>
+            </form>
+
+            <section class="content" id="resultadoDaConversaoRealEuro"></section>
+        </article>
+
+        <article class="card">
+            <header class="card__header">
+                <p>BRL para Libra</p>
+                <img src="assets/libra.png" alt="">
+            </header>
+            <form class="card__form">
+                <input type="text" id="peso" placeholder="Informe o valor em Real">
+                <button type="button" onclick="">Converter</button>
+            </form>
+        </article>
+
+        <article class="card">
+            <header class="card__header">
+                <p>Dólar para BRL</p>
+                <img src="assets/real.svg" alt="">
+            </header>
+            <form class="card__form">
+                <input type="text" id="peso" placeholder="Informe o valor em Dólar">
+                <button type="button" onclick="">Converter</button>
+            </form>
+        </article>
+
+        <article class="card">
+            <header class="card__header">
+                <p>Euro para BRL</p>
+                <img src="assets/real.svg" alt="">
+            </header>
+            <form class="card__form">
+                <input type="text" id="peso" placeholder="Informe o valor em Euro">
+                <button type="button" onclick="">Converter</button>
+            </form>
+        </article>
+
+        <article class="card">
+            <header class="card__header">
+                <p>Libra para BRL</p>
+                <img src="assets/real.svg" alt="">
+            </header>
+            <form class="card__form">
+                <input type="text" id="peso" placeholder="Informe o valor em Libras">
+                <button type="button" onclick="">Converter</button>
+            </form>
+        </article>
+    </main>
     
-</main>
-<!-- JS externo -->
-<script src="js/Trabalho/Andrick.js"></script>
 </body>
 </html>
