@@ -14,8 +14,8 @@ class Moedas {
         this.real = document.getElementById("real1").value;
         console.log(this.real)
 
-        const valorEmDolar = this.real/this.dollar;
-        const valorConvertido = valorEmDolar.toLocaleString('en-US', {style: 'currency', currency: 'USD'})
+        const valorEmDollar = this.real/this.dollar;
+        const valorConvertido = valorEmDollar.toLocaleString('en-US', {style: 'currency', currency: 'USD'})
         const valorEmReal = parseFloat(this.real).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
 
         document.getElementById("resultadoDaConversaoRealDollar").innerText = `${valorEmReal} é igual a ${valorConvertido}`
@@ -29,6 +29,16 @@ class Moedas {
         const valorEmReal = parseFloat(this.real).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
 
         document.getElementById("resultadoDaConversaoRealEuro").innerText = `${valorEmReal} é igual a ${valorConvertido}`
+    }
+    converterRealLibra() {
+        this.real = document.getElementById("real3").value;
+        console.log(this.real)
+
+        const valorEmLibra = this.real/this.libra
+        const valorConvertido = valorEmLibra.toLocaleString('en-US', {style: 'currency', currency: 'GBP'})
+        const valorEmReal = parseFloat(this.real).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+        document.getElementById("resultadoDaConversaoRealLibra").innerText = `${valorEmReal} é igual a ${valorConvertido}`
     }
 }
 
